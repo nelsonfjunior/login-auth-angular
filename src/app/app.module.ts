@@ -7,6 +7,9 @@ import { DefaultLoginLayoutComponent } from './components/default-login-layout/d
 import { LoginComponent } from './pages/login/login.component';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
 import { PrimaryInputComponent } from './components/primary-input/primary-input.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { PrimaryInputComponent } from './components/primary-input/primary-input.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
