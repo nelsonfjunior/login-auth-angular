@@ -10,13 +10,15 @@ import { PrimaryInputComponent } from './components/primary-input/primary-input.
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignUpComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DefaultLoginLayoutComponent,
     LoginComponent,
-    PrimaryInputComponent
+    PrimaryInputComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
