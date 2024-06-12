@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpComponent } from './pages/signup/signup.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SignUpComponent } from './pages/signup/signup.component';
     DefaultLoginLayoutComponent,
     LoginComponent,
     PrimaryInputComponent,
-    SignUpComponent
+    SignUpComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
